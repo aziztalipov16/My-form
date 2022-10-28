@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Форма</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="form">
+			<h2>Написать нам</h2>
+			<div class="content">
+				<input
+					type="text"
+					class="content-inp"
+					id="name"
+					placeholder="Введите имя" />
+				<input
+					type="text"
+					class="content-inp"
+					placeholder="Введите Email"
+					id="email" />
+				<textarea
+					class="content__textarea"
+					placeholder="Введите ваше сообщение"
+					id="message"></textarea>
+			</div>
+			<input
+				type="submit"
+				class="content__btn"
+				value="отправить"
+				id="btn-check" />
+			<p id="warn" style="text-align: center; color: red; display: none">
+				Неправильно введены данные:
+			</p>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
