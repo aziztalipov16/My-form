@@ -20,16 +20,17 @@ function checkData() {
 		warn.textContent = 'Неправильно введены данные: Имя';
 		return;
 	}
-	if (!message) {
-		warn.style.display = 'block';
-		warn.textContent = 'Вы не ввели сообщение';
-		return;
-	}
 	if (!check) {
 		warn.style.display = 'block';
 		warn.textContent = 'Неправильно введены данные: Email';
 		return;
 	}
+	if (!message) {
+		warn.style.display = 'block';
+		warn.textContent = 'Вы не ввели сообщение';
+		return;
+	}
+	
 
 	if (name && check && message) {
 		warn.style.display = 'none';
